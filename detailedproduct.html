@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Detailed</title>
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"><h1 style="color: orange;">MobShoP</h1></div>
+      <ul class="menu">
+        <li><a href="index.html" style="color: orange;">Home </a></li>
+        <li><a href="ProductCategories.html" style="color: orange;">Category </a></li>
+        <li><a href="detailedproduct.html"style="color: orange;">About Us </a></li>
+        <li><a href="registration.html"style="color: orange;">Registration</a></li>
+        <li><a href="userlogin.html"style="color: orange;">Sign in</a></li>
+        <li>
+          <a href=""> <i class="fas fa-shopping-cart"></i> </a>
+        </li>
+      </ul>
+      <!-- for small devices -->
+      <div class="menu-btn">
+        <i class="fa fa-bars"> </i>
+      </div>
+    </nav>
+
+    <main class="container mt-4">
+      <div class="product-container">
+       
+  
+        <div class="main-product-image">
+          <!-- Large image in the middle -->
+          <img src="/Images/phone5.jpg" alt="" id="mainImage" />
+        </div>
+  
+        <div class="product-description">
+          <!-- Product details and description -->
+          <h1 class="title"> iPhone 13 Pro </h1>
+          <hr>
+          <table class="product-table">
+            <tr>
+              <th>Specification</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>Display</td>
+              <td>6.1-inch Super Retina XDR OLED display.</td>
+            </tr>
+            <tr>
+              <td>Processor</td>
+              <td>Apple A14 Bionic chip with 6-core CPU and 4-core GPU.</td>
+            </tr>
+            <tr>
+              <td>RAM</td>
+              <td>4GB</td>
+            </tr>
+            <tr>
+              <td>Storage Options</td>
+              <td>64GB, 128GB, or 256GB non-expandable storage.</td>
+            </tr>
+            <tr>
+              <td>Main Camera</td>
+              <td>
+                Dual 12 MP, f/1.6 wide lens with optical image stabilization (OIS).
+              </td>
+            </tr>
+            <tr>
+              <td>Front Camera</td>
+              <td>12 MP, f/2.2 lens with HDR and Night mode support.</td>
+            </tr>
+            <tr>
+              <td>Battery</td>
+              <td>Built-in rechargeable lithium-ion battery.</td>
+            </tr>
+            <tr>
+              <td>Connectivity</td>
+              <td>5G, Wi-Fi 6, Bluetooth 5.0, NFC.</td>
+            </tr>
+            <tr>
+              <td>Operating System</td>
+              <td>iOS 14 (upgradable to the latest iOS version).</td>
+            </tr>
+            <tr>
+              <td>Other Features</td>
+              <td>Face ID facial recognition, Water and Dust resistance (IP68), Stereo speakers, Dolby Atmos support.</td>
+            </tr>
+          </table>
+          <hr>
+            <br><br>
+          <p class="price">Price:Rs 130,750</p>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </main>
+   
+    <footer>
+      <p>Copyrights@<a href=""></a></p>
+    </footer>
+    <!-- jquery -->
+    <script>
+      $(".menu-btn").click(function () {
+        $(".navbar .menu ").toggleClass("active");
+        $(".menu-btn i").toggleClass("active");
+      });
+    </script>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

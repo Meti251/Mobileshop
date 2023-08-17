@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  width: 400px;
+  margin: 5vh auto 3rem auto; 
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  font-size: 14px;
+
+}
+
+#form {
+  width:100%;
+  margin-bottom: 3rem; 
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#form h1 {
+  color: #424144;
+  text-align: center;
+}
+
+#form button {
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: #f63e4e;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0rem;
+}
+
+.input-control label {
+  color: #424144;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.input-control input {
+  border: 2px solid rgba(20, 19, 19, 0.486);
+  background-color: white;
+  color: #424144;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  display: block;
+  height: 30px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+/* Apply red color directly to .error class */
+.input-control.error input {
+  border-color: #f63e4e;
+  box-shadow: 0 0 5px #f63e4e; /* Add a red glow effect */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.input-control.error {
+  color: #f63e4e;
+}
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    height: 150px;
+  position: relative;
+}
+
+.avatar-container::before {
+  content: '';
+  display: block;
+  padding-top: 100%; /* This maintains the aspect ratio (1:1) for the circle */
+}
+
+.avatar-container > img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+/* footer  */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #f63e4e;
+  font-weight: bold;
+}
